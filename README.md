@@ -1,0 +1,2 @@
+# prometheus-is
+In the Identity server, we have a set of event publishers for publishing authentication, session, and token issuance events. We do not have any exporters specifically catered for the Prometheus tool, rather we can use the event publishers to publish these events to queue/collector/push-based monitoring tool. The configurations needs to be done for identity server to publish events.
