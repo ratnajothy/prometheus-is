@@ -5,10 +5,10 @@
 <web-app>
   <display-name>Web Application</display-name>
   <listener>
-    <listener-class>com.wso2.model.ServletContext</listener-class>
+    <listener-class>com.wso2.service.ServletContext</listener-class>
   </listener>
   <servlet>
-    <servlet-name>jersey-serlvet</servlet-name>
+    <servlet-name>Web App</servlet-name>
     <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
     <init-param>
       <param-name>com.sun.jersey.config.property.packages</param-name>
@@ -21,7 +21,7 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>jersey-serlvet</servlet-name>
+    <servlet-name>Web App</servlet-name>
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
 </web-app>

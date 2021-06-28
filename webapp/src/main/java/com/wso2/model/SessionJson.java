@@ -4,10 +4,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class SessionJson {
-    public Event EventObject;
+    public Event event;
     public class Event {
-        public MetaData MetaDataObject;
-        public PayloadData PayloadDataObject;
+        public MetaData metaData;
+        public PayloadData payloadData;
         public class PayloadData {
             public String sessionId;
             public float startTimestamp;
