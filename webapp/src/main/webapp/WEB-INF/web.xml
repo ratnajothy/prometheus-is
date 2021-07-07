@@ -3,12 +3,12 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Web Application</display-name>
+  <display-name>Prometheus API</display-name>
   <listener>
     <listener-class>com.wso2.service.ServletContext</listener-class>
   </listener>
   <servlet>
-    <servlet-name>Web App</servlet-name>
+    <servlet-name>Prometheus API</servlet-name>
     <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
     <init-param>
       <param-name>com.sun.jersey.config.property.packages</param-name>
@@ -21,7 +21,7 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Web App</servlet-name>
+    <servlet-name>Prometheus API</servlet-name>
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
 </web-app>
