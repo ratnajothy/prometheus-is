@@ -30,8 +30,8 @@ COPY /conf/custom.ini /usr/share/grafana/conf/custom.ini
 EXPOSE 3000 9090
 
 # Set a+rwx permissions to the directories
-RUN chmod -R 777 /usr/share/grafana /etc/prometheus /usr/share/bin/prometheus /data
-RUN chown -R 10014:10014 /usr/share/grafana /etc/prometheus /usr/share/bin/prometheus /data
+RUN chmod -R 777 /usr/share/grafana /etc/prometheus /usr/share/bin/prometheus
+RUN chown -R 10014:10014 /usr/share/grafana /etc/prometheus /usr/share/bin/prometheus
 # Create a non-root user
 USER 10014
 
